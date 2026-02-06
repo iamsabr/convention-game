@@ -1,7 +1,7 @@
 // Spell data for the convention game
 const SPELLS = [
-    { id: 'fast', name: 'Fast', effect: 'Double speed, 1 round' },
-    { id: 'slow', name: 'Slow', effect: 'Half speed, 1 round' },
+    { id: 'fast', name: 'Fast', effect: 'Move to There and still act, 1 round' },
+    { id: 'slow', name: 'Slow', effect: 'Move or act (not both), 1 round' },
     { id: 'shrink', name: 'Shrink', effect: '1/10 size (target ≤ your size)' },
     { id: 'grow', name: 'Grow', effect: 'Double size, +1 STR' },
     { id: 'hold', name: 'Hold', effect: 'Target immobile, 1 round' },

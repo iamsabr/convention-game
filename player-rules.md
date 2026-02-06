@@ -25,8 +25,8 @@ Cast with INT. One spell per turn.
 
 | Spell | Effect |
 |-------|--------|
-| Fast | Double speed, 1 round |
-| Slow | Half speed, 1 round |
+| Fast | Move to There and still act, 1 round |
+| Slow | Move or act (not both), 1 round |
 | Shrink | 1/10 size (target ≤ your size) |
 | Grow | Double size, +1 STR |
 | Hold | Target immobile, 1 round |
