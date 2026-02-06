@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convention Quest - Character Creator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Convention Quest</h1>
+            <p class="subtitle">Character Creator</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-fill"></div>
+        </div>
+        <p class="progress-text">Step 0 of 8</p>
+
+        <!-- Step 0: Welcome -->
+        <section class="wizard-step active" data-step="0">
+            <div class="step-content welcome-content">
+                <h2>Create Your Character</h2>
+                <p>This wizard will walk you through creating a character for Convention Quest. Grab your dice — you'll be rolling 3d6 for stats!</p>
+                <button class="btn btn-primary" data-action="start">Begin</button>
+
+                <div id="saved-characters"></div>
+            </div>
+        </section>
+
+        <!-- Step 1: Instructions -->
+        <section class="wizard-step" data-step="1">
+            <div class="step-content">
+                <h2>How This Works</h2>
+                <p class="instruction">You'll create a character by:</p>
+                <ol style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Naming your character and choosing an ancestry</li>
+                    <li>Rolling dice for your stats (you'll need real dice!)</li>
+                    <li>Defining your background, talent, and flaw</li>
+                    <li>Optionally choosing spells</li>
+                    <li>Rolling for starting coins</li>
+                </ol>
+                <p class="instruction">The whole process takes about 10-15 minutes.</p>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Let's Go!</button>
+            </nav>
+        </section>
+
+        <!-- Step 2: Name & Ancestry -->
+        <section class="wizard-step" data-step="2">
+            <div class="step-content">
+                <h2>Who Are You?</h2>
+                <div class="error-message"></div>
+
+                <div class="form-group">
+                    <label for="char-name">Character Name</label>
+                    <input type="text" id="char-name" placeholder="Enter your character's name">
+                </div>
+
+                <div class="form-group">
+                    <label for="char-ancestry">Ancestry</label>
+                    <input type="text" id="char-ancestry" placeholder="e.g., Dwarf, Elf, Human">
+                    <p class="suggestions"><strong>Ideas:</strong> Human, Dwarf, Elf, Halfling, Orc, Goblin, Tiefling, Gnome</p>
+                </div>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Next</button>
+            </nav>
+        </section>
+
+        <!-- Step 3: Stats -->
+        <section class="wizard-step" data-step="3">
+            <div class="step-content">
+                <h2>Roll Your Stats</h2>
+                <div class="error-message"></div>
+
+                <p class="instruction">Roll 3d6, add the dice together, then assign the total to one of your stats. Repeat until all stats are filled.</p>
+
+                <div id="stat-assignment">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Next</button>
+            </nav>
+        </section>
+
+        <!-- Step 4: Background & Talent -->
+        <section class="wizard-step" data-step="4">
+            <div class="step-content">
+                <h2>Your Story</h2>
+                <div class="error-message"></div>
+
+                <p class="instruction">Your character is defined by a sentence: "I am a [ancestry] <strong>[background]</strong> who is good at <strong>[talent]</strong>..."</p>
+
+                <div class="form-group">
+                    <label for="char-background">Background</label>
+                    <input type="text" id="char-background" placeholder="e.g., Alchemist, Soldier, Merchant">
+                    <p class="suggestions"><strong>Ideas:</strong> Alchemist, Soldier, Merchant, Scholar, Thief, Blacksmith, Sailor, Hunter</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="char-talent">Talent (good at...)</label>
+                    <input type="text" id="char-talent" placeholder="e.g., solving riddles, climbing">
+                    <p class="suggestions"><strong>Ideas:</strong> solving riddles, climbing, fast-talking, sneaking, reading people, tracking</p>
+                </div>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Next</button>
+            </nav>
+        </section>
+
+        <!-- Step 5: Flaw -->
+        <section class="wizard-step" data-step="5">
+            <div class="step-content">
+                <h2>Your Flaw</h2>
+                <div class="error-message"></div>
+
+                <p class="instruction">Every character has a flaw — the "BUT" in your sentence. When your flaw causes problems, you earn learning points (used for rerolls!).</p>
+
+                <div class="form-group">
+                    <label for="char-flaw">BUT... (your flaw)</label>
+                    <input type="text" id="char-flaw" placeholder="e.g., misses what's in front of my face">
+                    <p class="suggestions"><strong>Ideas:</strong> can't resist a challenge, trusts too easily, speaks before thinking, afraid of heights, overconfident</p>
+                </div>
+
+                <div class="sentence-preview" id="sentence-preview">
+                    "I am a [ancestry] [background] who is good at [talent], BUT [flaw]."
+                </div>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Next</button>
+            </nav>
+        </section>
+
+        <!-- Step 6: Spells -->
+        <section class="wizard-step" data-step="6">
+            <div class="step-content">
+                <h2>Magic</h2>
+                <div class="error-message"></div>
+
+                <div class="magic-toggle">
+                    <input type="checkbox" id="use-magic">
+                    <label for="use-magic">My character can cast spells</label>
+                </div>
+
+                <div id="spell-selection">
+                    <p class="instruction">Choose exactly 3 spells. Spells are cast using INT.</p>
+                    <p id="spell-count">0/3 selected</p>
+                    <div id="spell-list">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Next</button>
+            </nav>
+        </section>
+
+        <!-- Step 7: Gear & Coins -->
+        <section class="wizard-step" data-step="7">
+            <div class="step-content">
+                <h2>Starting Gear</h2>
+                <div class="error-message"></div>
+
+                <div class="starting-gear">
+                    <h4>You start with:</h4>
+                    <ul>
+                        <li>Clothing (0 armor)</li>
+                        <li>Shabby weapon (+0 damage)</li>
+                    </ul>
+                </div>
+
+                <div class="roll-input-section">
+                    <p class="instruction">Roll <strong>2d6</strong> for your starting coins:</p>
+                    <input type="number" id="coins-roll-value" min="2" max="12" placeholder="2-12" class="roll-input">
+                    <p id="coins-display">0 coins</p>
+                </div>
+
+                <p class="instruction" style="margin-top: 1rem;">You can buy equipment before the adventure begins. Ask your GM about prices!</p>
+            </div>
+            <nav class="step-nav">
+                <button class="btn btn-secondary" data-action="prev">Back</button>
+                <button class="btn btn-primary" data-action="next">Finish</button>
+            </nav>
+        </section>
+
+        <!-- Step 8: Summary -->
+        <section class="wizard-step" data-step="8">
+            <div class="step-content">
+                <h2>Your Character</h2>
+
+                <div id="character-summary">
+                    <!-- Dynamically populated -->
+                </div>
+
+                <div class="summary-actions">
+                    <button class="btn btn-primary" id="save-character">Save Character</button>
+                    <button class="btn btn-secondary" id="print-character">Print / Save PDF</button>
+                    <button class="btn btn-secondary" data-action="restart">Create Another</button>
+                </div>
+
+                <div id="saved-characters"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/spells.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
