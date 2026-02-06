@@ -1,4 +1,4 @@
-# Convention Quest
+# sabr's convention quest
 
 A lightweight tabletop RPG designed for convention one-shots. Players can create characters in 10-15 minutes and start playing immediately.
 
@@ -21,7 +21,7 @@ A mobile-friendly wizard that walks players through character creation step-by-s
 
 ## Game Overview
 
-Convention Quest uses a simple 2d6 system inspired by Powered by the Apocalypse games:
+sabr's convention quest uses a simple 2d6 system inspired by Powered by the Apocalypse games:
 
 | Roll (2d6 + mods) | Result |
 |-------------------|--------|

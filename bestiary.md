@@ -1,4 +1,4 @@
-# Convention Quest — Bestiary of Terrors
+# sabr's convention quest — Bestiary of Terrors
 
 Terrors are boss-level monsters with 5 hearts, 1-2 armor, and auto-hit moves. Roll d6 when the terror acts OR as a consequence for player failure.
 

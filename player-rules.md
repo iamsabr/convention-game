@@ -1,4 +1,4 @@
-# Convention Quest — Player Rules
+# sabr's convention quest — Player Rules
 
 ## Create Your Character
 

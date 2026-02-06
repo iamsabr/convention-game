@@ -1,4 +1,4 @@
-# Convention Quest — GM Reference
+# sabr's convention quest — GM Reference
 
 ## Core Test Results
 

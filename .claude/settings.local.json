@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: player and GM reference sheets\n\nAdd one-page reference sheets for convention RPG:\n- player-rules.md: character creation, core mechanics, combat, spells\n- gm-rules.md: monster rules, situational modifiers, running tips\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd index card character sheet template\n\nCompact character sheet designed to fit on a 4x6 index card:\n- Front: name, sentence, stats, hearts, spells, gear, coins\n- Back: spell reference and quick roll chart\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd character creation wizard web app\n\nMobile-friendly wizard that walks players through character creation:\n- Stats: roll 3d6, assign one at a time, triplicate detection\n- Sentence: ancestry, background, talent, flaw \\(BUT clause\\)\n- Spells: optional, pick 3 from 14 options\n- Gear: starting equipment + coin roll\n\nFeatures:\n- LocalStorage save/load\n- Print-friendly CSS for PDF export\n- Vanilla JS, no build step \\(GitHub Pages ready\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(python -m http.server:*)",
+      "Bash(timeout:*)",
+      "Bash(curl:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix duplicate character saves\n\nWhen saving a character, check if one with the same name exists.\nIf so, prompt user to update existing or save as new copy.\n\n- Add findByName\\(\\) and updateCharacter\\(\\) to Storage\n- Update saveCharacter\\(\\) to check for duplicates\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}
