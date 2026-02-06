@@ -58,8 +58,9 @@ Roll **2d6 + modifiers** for any action with uncertain outcome.
 | 6-8 | Success, but... *(complication)* |
 | 9-10 | Success |
 | 11+ | Success, and... *(bonus)* |
-| 🎲 Snake eyes | "But" at best |
-| 🎲 Boxcars | "And" minimum |
+
+**Snake eyes (1-1):** Always has a complication, no matter your bonus.
+**Boxcars (6-6):** Always has a bonus, no matter your penalty.
 
 **Add bonuses when relevant:**
 - Stat bonus (+2 highest / -1 lowest)
