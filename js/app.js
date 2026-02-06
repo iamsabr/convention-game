@@ -514,8 +514,28 @@ const App = {
     // Save character to localStorage
     saveCharacter() {
         const charData = { ...this.character };
-        const id = Storage.saveCharacter(charData);
-        alert('Character saved!');
+
+        // Check if character with same name already exists
+        const existing = Storage.findByName(charData.name);
+
+        if (existing) {
+            const update = confirm(
+                `A character named "${charData.name}" already exists.\n\n` +
+                `Click OK to update the existing character, or Cancel to save as a new character.`
+            );
+
+            if (update) {
+                Storage.updateCharacter(existing.id, charData);
+                alert('Character updated!');
+            } else {
+                Storage.saveCharacter(charData);
+                alert('New character saved!');
+            }
+        } else {
+            Storage.saveCharacter(charData);
+            alert('Character saved!');
+        }
+
         this.loadSavedCharacters();
     },
 
