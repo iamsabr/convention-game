@@ -313,13 +313,6 @@ const App = {
 
         this.character.stats[statName] = value;
 
-        // Check for triplicates
-        if (Stats.hasTriplicates(this.character.stats)) {
-            const lowest = Stats.getLowestAssigned(this.character.stats);
-            alert(`Triplicates detected! Keeping ${lowest.name} (${lowest.value}) and resetting other stats.`);
-            this.character.stats = Stats.resetKeepingLowest(this.character.stats);
-        }
-
         // Re-render
         this.renderStatAssignment();
     },

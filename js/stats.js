@@ -31,35 +31,6 @@ const Stats = {
         return STAT_NAMES.every(name => stats[name] !== null);
     },
 
-    // Check for triplicates (3 or more stats with same value)
-    hasTriplicates(stats) {
-        const values = Object.values(stats).filter(v => v !== null);
-        const counts = {};
-        values.forEach(v => {
-            counts[v] = (counts[v] || 0) + 1;
-        });
-        return Object.values(counts).some(count => count >= 3);
-    },
-
-    // Find the lowest assigned value (for triplicate reset)
-    getLowestAssigned(stats) {
-        const assigned = this.getAssigned(stats);
-        if (assigned.length === 0) return null;
-        return assigned.reduce((min, curr) =>
-            curr.value < min.value ? curr : min
-        );
-    },
-
-    // Reset stats keeping only the lowest value
-    resetKeepingLowest(stats) {
-        const lowest = this.getLowestAssigned(stats);
-        const newStats = this.createEmpty();
-        if (lowest) {
-            newStats[lowest.name] = lowest.value;
-        }
-        return newStats;
-    },
-
     // Calculate bonuses for completed stats
     calculateBonuses(stats) {
         if (!this.isComplete(stats)) return null;
@@ -88,8 +59,8 @@ const Stats = {
             if (value === lowest) {
                 bonus -= 1;
             }
-            // Duplicates get +1 each
-            if (counts[value] === 2) {
+            // Matching values get +1 each
+            if (counts[value] >= 2) {
                 bonus += 1;
             }
 
