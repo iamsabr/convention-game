@@ -30,7 +30,7 @@ A towering brute standing 12 feet tall, armed with a massive club or uprooted tr
 | 1 | **Crushing Blow** — Slams club down; 2 damage, target knocked prone |
 | 2 | **Boulder Hurl** — Throws a massive rock at a target up to 30'; 2 damage |
 | 3 | **Sweeping Strike** — Swings club in wide arc; all adjacent targets take 1 damage |
-| 4 | **Ground Pound** — Smashes ground; all nearby must pass DEX or fall prone |
+| 4 | **Ground Pound** — Smashes ground; all nearby fall prone |
 | 5 | **Grab and Squeeze** — Snatches a target; held and takes 1 damage per round until freed |
 | 6 | **Enraged Roar** — Bellows in fury; +1 damage on all attacks until hit |
 
@@ -60,7 +60,7 @@ A winged horror with a woman's face and a vulture's body. Its haunting song lure
 | d6 | Move |
 |----|------|
 | 1 | **Raking Talons** — Swoops down with claws; 1 damage and target bleeding (-1 next roll) |
-| 2 | **Captivating Song** — Target must pass WIS or be charmed, walking toward the harpy |
+| 2 | **Captivating Song** — Target is charmed and must spend their next turn walking toward the harpy |
 | 3 | **Wing Buffet** — Beats wings violently; target knocked back 10' and disoriented |
 | 4 | **Snatch and Drop** — Grabs target and lifts 20' up; drops them for 2 damage |
 | 5 | **Shriek** — Piercing scream; all nearby take -1 to next roll from ringing ears |
@@ -76,7 +76,7 @@ A massive gastropod oozing caustic slime. Slow but relentless, dissolving everyt
 | d6 | Move |
 |----|------|
 | 1 | **Acid Spit** — Launches glob of digestive acid; 1 damage, ignores armor |
-| 2 | **Slime Trail** — Leaves a 10' line of slippery mucus; anyone crossing must pass DEX or fall |
+| 2 | **Slime Trail** — Leaves a 10' line of slippery mucus; anyone who crosses it falls prone |
 | 3 | **Engulf** — Oozes over prone or held target; 2 damage per round until escaped |
 | 4 | **Corrosive Touch** — Target's armor reduced by 1 (can't go below 0) |
 | 5 | **Regenerate** — The slug heals 1 heart as its flesh knits together |
@@ -107,11 +107,11 @@ A strange fey predator from the deep woods, standing waist-high with an elegant,
 
 | d6 | Move |
 |----|------|
-| 1 | **Hypnotic Sway** — Tail moves in mesmerizing patterns; target must pass WIS or stand dazed for 1 round |
+| 1 | **Hypnotic Sway** — Tail moves in mesmerizing patterns; target stands dazed and cannot act for 1 round |
 | 2 | **Soundless Pounce** — Appears beside target without warning; 1 damage and target can't act until next turn |
 | 3 | **Echoing Ears** — Picks up whispered plans; the GM learns what the players are planning and the Glimmerfang counters |
 | 4 | **Fey Step** — Vanishes and reappears anywhere within 20'; can't be targeted until it attacks |
-| 5 | **Dissonant Yowl** — Emits an otherworldly screech; all nearby must pass CON or take -1 to all rolls for 1 round |
+| 5 | **Dissonant Yowl** — Emits an otherworldly screech; all nearby take -1 to all rolls for 1 round |
 | 6 | **Playful Cruelty** — Toys with a prone or held target; 2 damage as it bats them around with its paws |
 
 ---
