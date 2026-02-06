@@ -72,6 +72,21 @@ Roll **2d6 + modifiers** for any action with uncertain outcome.
 
 ---
 
+## Movement & Range
+
+| Band | Meaning | Example |
+|------|---------|---------|
+| **Here** | Same zone as you | The room you're in |
+| **There** | One zone away | An adjacent room |
+| **Far** | Two+ zones away | Requires multiple turns |
+
+- Move anywhere within **Here** and still take an action
+- Moving to **There** takes your entire turn (no action)
+- **Melee** attacks can only hit targets **Here**
+- **Ranged** attacks can hit **Here** or **There**, but not **Far**
+
+---
+
 ## Combat
 
 Attack = test using appropriate stat. On success, deal damage.
