@@ -1,4 +1,12 @@
+---
+date: 2026-02-05
+version: draft .02
+author: sabr
+---
+
 # sabr's convention quest — Player Rules
+
+A big thank you to the game creators that helped inspire various rules in this ick up game. I borrowed liberally from the Cypher System, Dragonbane, Powered by the Apocalypse and more. Where something in these rules looks or feels like it was borrowed from someplace else, it likely was.
 
 ## Create Your Character
 
