@@ -28,7 +28,7 @@ A towering brute standing 12 feet tall, armed with a massive club or uprooted tr
 | d6 | Move |
 |----|------|
 | 1 | **Crushing Blow** — Slams club down; 2 damage, target knocked prone |
-| 2 | **Boulder Hurl** — Throws a massive rock at a target up to 30'; 2 damage |
+| 2 | **Boulder Hurl** — Throws a massive rock at a target Here or There; 2 damage |
 | 3 | **Sweeping Strike** — Swings club in wide arc; all adjacent targets take 1 damage |
 | 4 | **Ground Pound** — Smashes ground; all nearby fall prone |
 | 5 | **Grab and Squeeze** — Snatches a target; held and takes 1 damage per round until freed |
@@ -44,7 +44,7 @@ A hulking humanoid covered in thick hide and bad attitude. Wears scavenged armor
 | d6 | Move |
 |----|------|
 | 1 | **Brutal Swing** — Massive overhead chop; 2 damage to target |
-| 2 | **Backhand** — Swats target aside; 1 damage and knocked back 10' |
+| 2 | **Backhand** — Swats target aside; 1 damage and knocked back |
 | 3 | **Belly Charge** — Rushes forward, slamming into target; both fall prone, 1 damage |
 | 4 | **Grapple** — Grabs target in meaty fist; held until freed, can't attack |
 | 5 | **Throw Object** — Hurls nearby debris, furniture, or ally; 1 damage, target prone |
@@ -61,8 +61,8 @@ A winged horror with a woman's face and a vulture's body. Its haunting song lure
 |----|------|
 | 1 | **Raking Talons** — Swoops down with claws; 1 damage and target bleeding (-1 next roll) |
 | 2 | **Captivating Song** — Target is charmed and must spend their next turn walking toward the harpy |
-| 3 | **Wing Buffet** — Beats wings violently; target knocked back 10' and disoriented |
-| 4 | **Snatch and Drop** — Grabs target and lifts 20' up; drops them for 2 damage |
+| 3 | **Wing Buffet** — Beats wings violently; target knocked back and disoriented |
+| 4 | **Snatch and Drop** — Grabs target and lifts high; drops them for 2 damage |
 | 5 | **Shriek** — Piercing scream; all nearby take -1 to next roll from ringing ears |
 | 6 | **Call the Flock** — 2 harpy minions arrive to join the fight |
 
@@ -76,7 +76,7 @@ A massive gastropod oozing caustic slime. Slow but relentless, dissolving everyt
 | d6 | Move |
 |----|------|
 | 1 | **Acid Spit** — Launches glob of digestive acid; 1 damage, ignores armor |
-| 2 | **Slime Trail** — Leaves a 10' line of slippery mucus; anyone who crosses it falls prone |
+| 2 | **Slime Trail** — Leaves a trail of slippery mucus across the zone; anyone who crosses it falls prone |
 | 3 | **Engulf** — Oozes over prone or held target; 2 damage per round until escaped |
 | 4 | **Corrosive Touch** — Target's armor reduced by 1 (can't go below 0) |
 | 5 | **Regenerate** — The slug heals 1 heart as its flesh knits together |
@@ -91,8 +91,8 @@ A small dragon the size of a horse, with scales like cooling embers and smoke cu
 
 | d6 | Move |
 |----|------|
-| 1 | **Fire Breath** — Spews a 15' cone of flame; all in area take 2 damage |
-| 2 | **Tail Lash** — Whips tail around; target knocked prone and back 5' |
+| 1 | **Fire Breath** — Spews a cone of flame; all targets Here in front take 2 damage |
+| 2 | **Tail Lash** — Whips tail around; target knocked prone and back |
 | 3 | **Pounce and Pin** — Leaps onto target; pinned beneath claws until freed |
 | 4 | **Take Flight** — Launches into the air; out of melee reach, next attack is a diving strike for +1 damage |
 | 5 | **Smoke Screen** — Exhales thick smoke; all targets have -1 to attacks until they move clear |
@@ -110,7 +110,7 @@ A strange fey predator from the deep woods, standing waist-high with an elegant,
 | 1 | **Hypnotic Sway** — Tail moves in mesmerizing patterns; target stands dazed and cannot act for 1 round |
 | 2 | **Soundless Pounce** — Appears beside target without warning; 1 damage and target can't act until next turn |
 | 3 | **Echoing Ears** — Picks up whispered plans; the GM learns what the players are planning and the Glimmerfang counters |
-| 4 | **Fey Step** — Vanishes and reappears anywhere within 20'; can't be targeted until it attacks |
+| 4 | **Fey Step** — Vanishes and reappears anywhere Here or There; can't be targeted until it attacks |
 | 5 | **Dissonant Yowl** — Emits an otherworldly screech; all nearby take -1 to all rolls for 1 round |
 | 6 | **Playful Cruelty** — Toys with a prone or held target; 2 damage as it bats them around with its paws |
 

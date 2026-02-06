@@ -30,11 +30,11 @@ Cast with INT. One spell per turn.
 | Shrink | 1/10 size (target ≤ your size) |
 | Grow | Double size, +1 STR |
 | Hold | Target immobile, 1 round |
-| Blast | 10' cone, damages all |
-| Shot | 20' projectile, single target |
+| Blast | Cone, all targets Here in front of you |
+| Shot | Ranged, targets Here or There |
 | Shield | Block/reduce damage, 1 round |
 | Float | Lift target off ground |
-| Push | Shove target 10' |
+| Push | Knock target prone |
 | Mend | Heal 1 heart (2 on 11+) |
 | Veil | Create illusion or disguise |
 | Sense | Detect hidden things or lies |

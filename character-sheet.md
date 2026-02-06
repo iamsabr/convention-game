@@ -45,11 +45,11 @@
 | Shrink | 1/10 size |
 | Grow | Double size, +1 STR |
 | Hold | Immobile, 1 rd |
-| Blast | 10' cone, all |
-| Shot | 20' single target |
+| Blast | Cone, all Here |
+| Shot | Ranged, Here/There |
 | Shield | Block damage, 1 rd |
 | Float | Lift off ground |
-| Push | Shove 10' |
+| Push | Knock prone |
 | Mend | Heal 1 (2 on 11+) |
 | Veil | Illusion/disguise |
 | Sense | Detect hidden/lies |
