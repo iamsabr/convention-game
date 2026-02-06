@@ -12,8 +12,7 @@ Roll 3d6, assign the total to any open stat, then roll again. Repeat until all s
 | Highest | +2 |
 | Lowest | -1 |
 | Middle stats | +0 |
-| Duplicates | +1 each (stacks) |
-| Triplicates | Keep lowest, reroll other 5 |
+| Matching values | +1 each (stacks) |
 
 **2. Write Your Sentence**
 *"I am a [ancestry] [background] who is good at [talent], BUT [flaw]."*
